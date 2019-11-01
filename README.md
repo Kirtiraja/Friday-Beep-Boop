@@ -1,4 +1,4 @@
-# Friday Project
+# Friday Beep-Boop Project
 
 ## Specifications
 
