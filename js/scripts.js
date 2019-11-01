@@ -29,9 +29,11 @@ $(document).ready(function() {
        userArray.push(index);
      }
      userArray.forEach(function(number){
-       if (beep.includes(number[0])){
-         return "Beep!"
-       }
+console.log("hello")
+       // if (beep.includes(number[0])){
+       //   console.log("goodbye")
+       //   return
+       // }
      })
      console.log(userArray);
 
