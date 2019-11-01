@@ -5,7 +5,7 @@
 | Behavior: | Input Example: | Output Example: |
 | - | - | - |
 | **Our program should handle:** | **When it receives:** | **It should return:** |
-|Any input that isn't a number is treated as invalid|"cat"|"please enter a number"  |
+|User can only input a number|||
 |The program returns a range of numbers from 0 to the users inputted number| "4" |"0,1,2,3,4"|
 |Numbers that contain a "1":all digits are replaced with "Beep!"  | "11"  |"Beep!"  |
 |Numbers that contain a 2: all digits are replaced with "Boop!"| "22" | "Boop!" |
