@@ -2,10 +2,7 @@
 
 
 
-function userRange(nummys) {
 
-
-}
 
 
 
@@ -26,16 +23,18 @@ $(document).ready(function() {
     var finalResult = userInput;
 
     var userInput = parseInt($("#userNumber").val());
-    for (var index = 0; index < userSplit; index ++){
-    return + 1;
-    }
 
+     var userArray = [];
+     for (index = 0; index <= userInput ; index += 1) {
+       userArray.push(index);
+     }
 
+     console.log(userArray);
 
-      var userSplit = []
-      userSplit.push(userInput);
+      // var userSplit = []
+      // userSplit.push(userInput);
 
-      console.log(userSplit)
+      // console.log(userSplit)
 
   });
 });
