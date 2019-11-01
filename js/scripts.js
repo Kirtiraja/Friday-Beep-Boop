@@ -23,18 +23,18 @@ $(document).ready(function() {
     var finalResult = userInput;
 
     var userInput = parseInt($("#userNumber").val());
-    var beep = 1
+
      var userArray = [];
      for (index = 0; index <= userInput ; index += 1) {
        userArray.push(index);
      }
-     userArray.forEach(function(number){
-console.log("hello")
-       // if (beep.includes(number[0])){
+       console.log("hello")
+   // if (beep.includes(number[0])){
        //   console.log("goodbye")
        //   return
-       // }
-     })
+   //     // }
+   //   })
+   // })
      console.log(userArray);
 
       // var userSplit = []
@@ -44,3 +44,13 @@ console.log("hello")
 
   });
 });
+
+
+function giveBeep(number){
+  var beep = [1];
+  userArray.map(function(number){
+    if (beep.includes(number[0])){
+      return + "beep";
+    };
+  });
+};
