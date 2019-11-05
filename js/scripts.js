@@ -1,56 +1,58 @@
 //BUSINESS LOGIC
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//  var numberBeep = function(number) {
+//   var numbers = [1];
+//   if (numbers.includes(number[0])){
+//     return number + "Beep!";
+//   }
+// }
+//
+// function sayBeep(userNumber) {
+//   var beepSentence = userArray.map(function(userNumber) {
+//     return numberBeep(userArray);
+//   })
+// }
 
 //USER LOGIC
 $(document).ready(function() {
   $("form#userForm").submit(function(event){
-    event.preventDefault();
-    $("p#result").text(finalResult);
-    var finalResult = userInput;
+    $("ul#result").show(userArray);
+    var finalResult = function(resultBeep) {
+      return userArray + "Beep!";
 
+    }
     var userInput = parseInt($("#userNumber").val());
 
-     var userArray = [];
-     for (index = 0; index <= userInput ; index += 1) {
-       userArray.push(index);
-     }
-       console.log("hello")
-   // if (beep.includes(number[0])){
-       //   console.log("goodbye")
-       //   return
-   //     // }
-   //   })
-   // })
-     console.log(userArray);
+    var userArray = [];
+    for (index = 0; index <= userInput ; index += 1) {
+      userArray.push(index);
+    }
 
-      // var userSplit = []
-      // userSplit.push(userInput);
 
-      // console.log(userSplit)
+    event.preventDefault();
+
+    console.log(userArray);
+
 
   });
 });
 
+// var beep = [1];
+// function giveBeep(number){
+  //   if userArray.includes(number[0])){
+    //     return + "beep";
+    //   };
+    // });
 
-function giveBeep(number){
-  var beep = [1];
-  userArray.map(function(number){
-    if (beep.includes(number[0])){
-      return + "beep";
-    };
-  });
-};
+
+
+
+    // var userSplit = []
+    // userSplit.push(userInput);
+
+
+    // if (beep.includes(number[0])){
+      //   console.log("goodbye")
+      //   return
+      //     // }
+      //   })
+      // })
