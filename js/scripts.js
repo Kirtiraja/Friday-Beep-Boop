@@ -1,58 +1,42 @@
 //BUSINESS LOGIC
-//  var numberBeep = function(number) {
-//   var numbers = [1];
-//   if (numbers.includes(number[0])){
-//     return number + "Beep!";
+
+// function makeBeep(nummberArray){
+//   var numbers = [1, 2, 3];
+//   if (numbers.includes(number)) {
+//     return number + 1;
+//   }
+//   else {
+//     return number ;
 //   }
 // }
-//
-// function sayBeep(userNumber) {
-//   var beepSentence = userArray.map(function(userNumber) {
-//     return numberBeep(userArray);
-//   })
-// }
+
+
 
 //USER LOGIC
 $(document).ready(function() {
   $("form#userForm").submit(function(event){
-    $("ul#result").show(userArray);
-    var finalResult = function(resultBeep) {
-      return userArray + "Beep!";
-
-    }
+    event.preventDefault();
     var userInput = parseInt($("#userNumber").val());
-
+    // var beepResult = makeBeep(userArray);
     var userArray = [];
     for (index = 0; index <= userInput ; index += 1) {
       userArray.push(index);
+    var mappedArray = userArray.map(function(number){
+      if (number === 1 || number ===3){
+        return "beep";
+      }
+      else {
+        return number;
+      }
+    })
+    var joinedArray = mappedArray.join("");
+      $("p#result").text(mappedArray);
     }
 
 
-    event.preventDefault();
 
     console.log(userArray);
 
 
   });
 });
-
-// var beep = [1];
-// function giveBeep(number){
-  //   if userArray.includes(number[0])){
-    //     return + "beep";
-    //   };
-    // });
-
-
-
-
-    // var userSplit = []
-    // userSplit.push(userInput);
-
-
-    // if (beep.includes(number[0])){
-      //   console.log("goodbye")
-      //   return
-      //     // }
-      //   })
-      // })
