@@ -15,15 +15,16 @@ var makeUserArray = function(userInput) {
     var joinedArray = mappedArray.join("");
   }
 }
-// function makeBeep(nummberArray){
-//   var numbers = [1, 2, 3];
-//   if (numbers.includes(number)) {
-//     return number + 1;
-//   }
-//   else {
-//     return number ;
-//   }
-// }
+
+function makeBeep(userArray){
+  var numbers = [1, 2, 3];
+  if (numbers.includes(number)) {
+    return number + 1;
+  }
+  else {
+    return number ;
+  }
+}
 
 
 
