@@ -9,7 +9,7 @@ _This website was a Independent Project assignment for week 3 at Epicodus requir
 
 ## Setup/Installation Requirements
 
-* Click <a href="https://kirtiraja.github.io/Friday-Beep-Boop Project/"> HERE </a>to see website.
+* Click <a href="https://kirtiraja.github.io/Friday-Beep-Boop/"> HERE </a>to see website.
 
 ## Specifications
 
